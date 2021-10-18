@@ -1,0 +1,17 @@
+footer {
+
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    margin-bottom:0;
+    width:100%;
+
+}
+
+.icone-rodape {
+
+    height: 30px;
+    padding: 10px;
+    width: 30px;
+
+}

@@ -1,0 +1,14 @@
+{
+  "name": "mesatrabalho",
+  "version": "1.0.0",
+  "description": "Mesa de Trabalho Aula 18",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sala 5",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
