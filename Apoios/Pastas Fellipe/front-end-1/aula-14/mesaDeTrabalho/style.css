@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    position: relative;
+    background-color: moccasin;
+}
+
+img{
+    position: relative;
+    left: 34.5%;
+    margin: 50px;
+}
+
+h1{
+    font-family: 'Emilys Candy', Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 40px;
+}
+
+fieldset{
+    margin: 12px 400px;
+    border: 3px;
+    border-style: solid;
+    padding: 18px;
+    border-color: #BB3755;
+}
+
+legend{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 0 4px;
+}
+
+div{
+    padding: 6px 0;
+}
+
+h4{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    padding-bottom: 6px;
+}
+
+label{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    padding-right: 6px;
+    padding-left: 4px;
+}
+
+.dados{
+    height: 24px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    width: 400px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 6px;
+    border-color: #BB3755;
+}
+
+::placeholder{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #bb37566e;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.data{
+    color: #bb37566e;
+    width: auto;
+    height: 24px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 6px;
+    border-color: #BB3755;
+    padding-left: 8px;
+}
+
+input[type="checkbox"]{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+input[type="checkbox"] + label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+input[type="checkbox"] + label::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    bottom: 0;
+    border: solid 2px;
+    border-color: #BB3755;
+    vertical-align: bottom;
+    border-radius: 6px;
+    background-color: white;
+}
+
+input[type="checkbox"]:checked + label::after{
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    width: 10px;
+    height: 20px;
+    border-right: solid 3px green;
+    border-bottom: solid 3px green;
+    transform: rotate(45deg);
+}
+
+input[type="radio"]{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+input[type="radio"] + label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+input[type="radio"] + label::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    bottom: 0;
+    border: solid 2px;
+    border-color: #BB3755;
+    vertical-align: bottom;
+    border-radius: 10px;
+    background-color: white;
+}
+
+input[type="radio"]:checked + label::after{
+    content: "";
+    position: absolute;
+    left: 3px;
+    bottom: 3px;
+    width: 8px;
+    height: 8px;
+    border: solid 3px #BB3755;
+    border-radius: 12px;
+    background-color:#BB3755;
+}
+
+optgroup{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+option{ 
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+select{
+    color: #bb37566e;
+    width: 150px;
+    height: 24px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 6px;
+    border-color: #BB3755;
+    padding-left: 8px; 
+}
+
+.obs{
+    position: relative;
+    bottom: 75px;
+}
+textarea{
+    position: relative;
+    padding: 8px 4px;
+    text-align: justify;
+    border: #BB3755 2px solid;
+    border-radius: 12px;
+}
+
+span{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+button{
+    position: relative;
+    left: 37.5%;
+    margin: 15px 15px 40px 15px;
+    height: 40px;
+    width: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border: #BB3755 3px solid;
+    border-radius: 14px;
+    cursor: pointer;
+    background-color: #f1d5db8e;
+    color:#BB3755;
+    font-weight: 800;
+}
+
+button:hover{
+    transform: scale(1.08);
+    filter: brightness(110%);
+}

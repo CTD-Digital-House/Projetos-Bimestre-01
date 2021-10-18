@@ -1,0 +1,43 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+main{
+    min-height: 100vh;
+}
+
+h1{
+    font-size: 4 rem;
+}
+
+section{
+
+    width: 250px;
+    height: 400PX;
+    background-color: aqua;
+
+}
+
+
+section article{
+    background-color: salmon;
+    width: 50%;
+    height: 400px;
+    /* height: calc(100vh - 50px); */
+}
+
+
+@media (min-width: 425px) {
+    h1{
+        font-size: 50px;
+    }
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}

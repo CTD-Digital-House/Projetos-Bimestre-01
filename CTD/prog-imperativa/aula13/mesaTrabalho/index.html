@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa Trabalho Aula 13</title>
+</head>
+<body>
+
+    <script>
+
+        // SALA 01 - João Bosco, Diógenes Capela, Pedro Oh, Wesley Tessmann, Carlos Filho, Túlio Ferreira, Lílian Melim
+
+        //Objeto literal
+
+       
+        var dadosGerais = {
+            nomeCompleto: "João B",
+            numeroAgencia: "2483",
+            numeroConta: "12345" ,
+            saldoAtual: 30,
+            
+            // Função para depositar e calcular o novo saldo:
+            deposito: function(valorDeposito){
+                this.saldoAtual += valorDeposito; 
+            return `Seu novo saldo é R$ ${this.saldoAtual},00 após depósito de R$ ${valorDeposito},00`;
+            },
+
+            //Função para avaliar Valor do Saque
+            fazerSaque: function(valorSaque){
+                var saldosuficiente = this.saldoAtual >= valorSaque;
+                // if (saldosuficiente){
+                //     this.saldoAtual -= valorSaque;
+                //     //return 
+                // }
+
+            }
+            
+        // Função geral:
+        dadosGeraisConta: function () {
+                return `Nome: ${this.nomeCompleto} Agência: ${this.numeroAgencia} Conta: ${this.numeroConta} Saldo: ${this.saldoAtual} Deposito: ${this.deposito()} Valor do Saque: ${this.valorSaque}`;
+          
+        }
+
+       }
+        console.log(`Nome completo: ${dadosGerais.nomeCompleto}`);
+        console.log('**************');
+        console.log(`Agencia:: ${dadosGerais.numeroAgencia} e Conta: ${dadosGerais.numeroConta}`);
+        console.log('**************');
+        console.log(`Saldo Atual: R$ ${dadosGerais.saldoAtual}`);
+        console.log('**************');
+        console.log(dadosGerais.deposito(10));
+        console.log('**************');
+        console.log(dadosGerais.dadosGeraisConta());
+        
+        
+
+    </script>
+    
+</body>
+</html>

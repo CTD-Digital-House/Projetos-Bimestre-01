@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+
+padding: 0%;
+margin: 0%;
+
+}
+
+body{
+
+    background-image: url(https://www.teahub.io/photos/full/308-3084793_beach-photo-light-blue-water-beach.jpg);
+   height: 1200px;
+
+}
+
+.menu-fixo{
+
+height: 100px;
+width:100%;
+background-color:rgba(252, 252, 252, 0.97);
+position: fixed;
+z-index: 3;
+}
+
+.logotipo{
+
+height: 80px;
+width: 80px;
+position: relative;
+top: 10px;
+left: 10px;
+
+}
+
+.menu{
+
+font-family: 'Roboto', Arial, Helvetica, sans-serif;
+font-size: 25px;
+position: relative;
+bottom: 20px;
+left: 500px;
+margin: 30px;
+color: rgba(231, 17, 81, 0.918);
+z-index: 3;
+
+}
+
+.menu:hover{
+
+    filter: brightness(120%);
+}
+
+.lista-produtos{
+
+    width: 100%;
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 12px;
+    position: absolute;
+    top: 120px;
+    z-index: 0;     
+
+}
+
+.box-produtos{
+
+margin: 36px 64px;
+position: relative;
+z-index: 0;  
+}
+
+.produto{
+
+width: 240px;
+height: 300px;
+margin-top: 12px;
+padding: 20px 12px;
+transition: ease-in-out 1.0s;
+z-index: 0;  
+}
+
+.produto:hover{
+
+transform: scale(1.4);
+filter:brightness(110%);
+opacity: 95%;
+
+}
+
+.botao-comprar{
+
+position: absolute;
+top: 100%;
+right: 27%;
+cursor: pointer;
+width: 120px;
+height: 40px;
+background-color:rgba(231, 17, 81, 0.918) ;
+font-family: 'Roboto', Arial ;
+color: whitesmoke;
+font-weight: bold;
+font-size: 18px;
+border-radius: 20px;
+z-index: -1;
+
+}
+
+.botao-comprar:hover{
+    transform: scale(1.08);
+    filter:brightness(110%); 
+}
+
+.whatsapp-icon{
+
+position: fixed;
+display: block;
+height: 70px;
+width: 70px;
+bottom: 20px;
+right: 20px;
+
+}
+
+.whatsapp-icon:hover{
+transform: scale(1.08);
+filter:brightness(110%);
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mesa de Trabalho - Aula 14 - Front End 1</title>
+</head>
+<body>
+
+    <form action="#" method="POST">
+
+        <img src="https://confeiteiralucrativa.com.br/wp-content/uploads/2020/04/logo.png" alt="Logotipo do Formulário" height="140px">
+
+        <h1>Formulário de Pedido</h1>
+
+        <fieldset>
+
+            <legend><strong>Dados Cadastrais</strong></legend>
+
+            <div>
+                <label for="nomeDoCliente">Nome Completo</label>
+                <input type="text" name="nomeDoCliente" id="nomeDoCliente" placeholder="Digite o seu nome completo" class="dados">
+            </div>
+
+            <div>
+                <label for="telefoneDoCliente">Telefone Celular</label>
+                <input type="number" name="telefoneDoCliente" id="telefoneDoCliente" placeholder="(00) 0 0000-0000" class="dados"> 
+            </div>
+
+            <div>
+                <label for="emailDoCliente">Email</label>
+                <input type="email" name="emailDoCliente" id="emailDoCliente" placeholder="seuemail@provedor.com.br" class="dados">
+            </div>
+
+            <div>
+                <label for="dataNascimento">Data de Nascimento</label>
+                <input type="date" name="dataDeNascimento" id="dataDeNascimento" class="data">
+            </div>
+
+            <div>
+                <input type="checkbox" id="promotions" class="check">
+                <label for="promotions">Desejo receber promoções por Whatsapp e E-mail</label>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend><strong>Dados do Pedido</strong></legend>
+
+            <h4>Seu bolo deve servir quantas pessoas?</h4>
+            <div>
+                <input type="radio" name="howMany" id="justMe">
+                <label for="justMe">Somente eu</label>
+                <input type="radio" name="howMany" id="upToFive">
+                <label for="upToFive">até 5 pessoas</label>
+                <input type="radio" name="howMany" id="overFive">
+                <label for="overFive" name="howMany" id="overFive">acima de 5 pessoas</label>
+            </div>
+
+            <div>
+                <label for="tipoMassa">Escolha o tipo da massa</label>
+                <select name="tipoMassa" id="tipoMassa">
+                    <option value="blank"></option>
+                    <optgroup label="Tradicionais">
+                        <option value="vanilla">Baunilha</option>
+                        <option value="choco">Chocolate</option>
+                    </optgroup>
+                    <optgroup label="Especiais">
+                        <option value="red">Red Velvet</option>
+                        <option value="pistachio">Pistache</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+                <label for="tipoRecheio">Escolha o tipo da recheio</label>
+                <select name="tipoRecheio" id="tipoRecheio">
+                    <option value="blank"></option>
+                    <optgroup label="Básicos">
+                        <option value="brigadeiro">Brigadeiro</option>
+                        <option value="leiteNinho">Leite Ninho</option>
+                    </optgroup>
+                    <optgroup label="Especiais">
+                        <option value="cookies">Cookies n Cream</option>
+                        <option value="redBerries">Frutas Vermelhas</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+                <label for="tipoCobertura">Escolha o tipo da cobertura</label>
+                <select name="tipoCobertura" id="tipoCobertura">
+                    <option value="blank"></option>
+                    <optgroup label="Básica">
+                        <option value="naked">Naked</option>
+                        <option value="american">Pasta Americana</option>
+                    </optgroup>
+                    <optgroup label="Especial">
+                        <option value="semiNaked">Semi Naked</option>
+                        <option value="butterCream">Butter Cream</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+                <input type="checkbox" name="personalizado" id="personalizado" class="check">
+                <label for="personalizado">Quero meu bolo personalizado</label>
+            </div>
+
+            <div>
+                <label for="comentarios" class="obs">Comentários e Observações</label>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Use esse campo para nos contar qualquer pedido especial que deseja no seu bolo"></textarea>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend><strong>Dados da Entrega</strong></legend>
+
+            <div>
+                <h4>Tipo de Entrega</h4>
+                <input type="radio" name="express" id="express">
+                <label for="express">Entrega Expressa</label>
+                <input type="radio" name="noRush" id="noRush">
+                <label for="noRush">Sem pressa</label>
+                <input type="radio" name="schedueled" id="schedueled">
+                <label for="schedueled">Agendada</label>
+            </div>
+            <span><em>*Escolha a data e horário de entrega caso sua opção seja "Agendada"</em></span>
+            <div>
+                <input type="datetime-local" name="dataEntrega" id="dataEntrega" class="data">
+            </div>
+
+            <div>
+                <label for="enderecoCliente">Endereço Completo</label>
+                <input type="text" name="enderecoCliente" id="enderecoCliente" class="dados" placeholder="Coloque aqui o seu endereço completo">
+            </div>
+
+            <div>
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep" class="dados" placeholder="00.000-000">
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend><strong>Dados de Pagamento</strong></legend>
+
+            <div>
+                <label for="paymentMeth">Escolha sua forma de pagamento</label>
+                <select name="paymentMeth" id="paymentMeth">
+                    <option value="null"></option>
+                    <option value="cc">Cartão de Crédito</option>
+                    <option value="pix">PIX</option>
+                    <option value="invoice">Boleto</option>
+                </select>
+            </div>
+
+        </fieldset>
+
+        <button type="submit">Fazer meu pedido</button>
+        <button type="reset">Limpar pedido</button>
+    </form>
+
+</body>
+</html>

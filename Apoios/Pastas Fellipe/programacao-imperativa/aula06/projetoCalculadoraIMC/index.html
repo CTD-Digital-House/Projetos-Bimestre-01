@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC - Sala 3</title>
+
+<!--        Sala 03
+            Felipe Bertevello
+            Matheus Kramer
+            Tulio Santos
+            Vando Borges
+            Wesley Tessmann
+            Thomas Bertelli -->
+
+</head>
+<body>
+
+    <h1>Cálculo IMC</h1>
+
+    <div>
+
+        <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa. <br><br>
+
+            O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9. <br><br>
+            
+            Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores. <br>
+        </p>
+
+            <script>// Nível I - Calculadora simples de IMC.
+
+                // Função chamar Variáveis necessárias
+                function calcularIMC(){
+                var nome = prompt('Bem vindo a calculadora de IMC Digital House. Por favor, insira seu nome.');
+                var idade = prompt('Agora, digite sua idade.');
+                var altura = prompt('Digite a sua altura.');
+                var peso = prompt('Digite o seu peso.');
+                var imc = peso / (altura * altura);
+                
+                alert(nome + ', o seu IMC é: ' + imc);
+            
+                imc < 18.5 ? alert('Sua classificação de IMC é: ABAIXO DO PESO com grau de obesidade 0') : 
+                imc < 24.9 ? alert('Sua classificação de IMC é: NORMAL com grau de obesidade 0') : 
+                imc < 29.9 ? alert('Sua classificação de IMC é: SOBREPESO com grau de obesidade I') : 
+                imc < 34.9 ? alert('Sua classificação de IMC é: OBESIDADE de grau I') : 
+                imc < 39.9 ? alert('Sua classificação de IMC é: OBESIDADE de grau II') : 
+                alert('Sua classificação de IMC é: OBESIDADE GRAVE de grau III');
+                }
+            </script>
+
+            <!-- Nível III - Inserir dentro de um HTML que rode em um botão-->
+
+            <button onclick="calcularIMC()"><strong>Calcular seu IMC</strong></button> <br><br>
+
+        <img width="350" src="https://www.ricardogozzano.com.br/wp-content/uploads/2020/03/tabela_imc.png"> <br><br>
+
+    </div>
+    
+</body>
+</html>

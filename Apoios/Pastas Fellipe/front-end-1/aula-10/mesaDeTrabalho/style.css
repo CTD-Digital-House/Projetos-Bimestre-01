@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.banner{
+    background-image: url(https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/bocw/BOCW-WZ-S1-ANNOUNCE-TOUT.jpg) ;
+    width: 1440px;
+    height: 400px;
+    background-position:center top;
+    color: lightgray;
+    text-align: center;
+    padding: 40px 0px;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 50px;
+    padding: 12px;
+    margin: 0%;
+    background-color: rgba(48, 49, 51, 0.6);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+
+}
+
+h2{
+    font-size: 35px;
+    padding: 10px;
+    background-color: rgba(48, 49, 51, 0.4);
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+}
+
+.botao-banner{
+    box-sizing: border-box;
+    width: 300px;
+    height: 60px;
+    border-radius: 18px;
+    color: lightgrey;
+    font-size: 25px;
+    background-color:darkred;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 25px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}

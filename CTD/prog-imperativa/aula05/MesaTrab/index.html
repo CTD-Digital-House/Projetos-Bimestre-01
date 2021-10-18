@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>
+        <h2>Sala 01</h2>
+    <ul>
+        <li>
+            <strong>João Bosco, Angelica Lírio, Carlos Estefan, Lucas Guimaraes, Paulo Alexandre, Kevin Miranda, Gulherme Rocha</strong>
+        </li>
+    </ul>
+     
+    </p>
+    <script>
+
+        function cotacaoDolar(){
+                    var nomeDoUsuario = prompt('Qual o seu nome?');
+                    var quantidadeDolares = prompt('Quantos dólares você gostaria de cotar?');
+                    var confirmacao = prompt(`Confirma o valor digitado? Valor= ${quantidadeDolares}. Digite 'sim' ou 'não'`);
+                    var cotacaoDolarHoje = 5.3;
+        
+                //console.log (confirmacao)
+            if (confirmacao == "sim"){
+                alert(`Olá ${nomeDoUsuario}. US$ ${quantidadeDolares} valem R$ ${quantidadeDolares * cotacaoDolarHoje} hoje,`);   
+            } 
+            else{
+                cotacaoDolar ()
+                }
+        }
+                cotacaoDolar();
+                alert (`Você será direcionado para a página de cotação do Dolar`);
+                alert ('Sala 01 - Grupo: João Bosco, Angelica Lírio, Carlos Estefan, Lucas Guimaraes, Paulo Alexandre, Kevin Miranda, Gulherme Rocha')
+                (window.location.href = 'https://www.google.com/search?q=cota%C3%A7%C3%A3o+dolar&oq=cota%C3%A7%C3%A3o+dolar&aqs=chrome..69i57j0i131i433i512j0i433i512j0i131i433i512j0i512j0i131i433i512j0i512j0i131i433i512j0i512l2.2850j1j4&sourceid=chrome&ie=UTF-8');
+    </script>
+</body>
+</html>

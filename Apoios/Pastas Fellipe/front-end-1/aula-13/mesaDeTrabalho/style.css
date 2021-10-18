@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url("sean-pollock-PhYq704ffdA-unsplash.jpg");
+}
+
+.logotipo{
+    height: 200px;
+    width: 60%;
+    background-color:rgb(227, 228, 234);
+    position: absolute;
+    left: 20%;
+    top: 100px;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.logotipo img {
+    height: 250px;
+    width: auto;
+    margin: -35px 0px;
+    position: absolute;
+    right: 30%;
+}
+
+h1{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 12px;
+    color: rgb(14, 32, 67);
+    right: 17%;
+
+}
+.formbox{
+    position: absolute;
+    height: fit-content;
+    width: 60%;
+    background-color:rgb(227, 228, 234); 
+    left: 20%;
+    top: 300px;
+    border-radius: 0px 0px 25px 25px;
+}
+
+form{
+    display: grid;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+label{
+    padding-bottom: 5px; 
+}
+
+input{
+    height: 25px;
+    margin-bottom: 12px;
+}
+
+input ::placeholder{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+select{
+    height: 25px;
+    margin-bottom: 12px;
+}
+
+textarea{
+    padding: 10px;
+    width: auto;
+    margin-bottom: 12px;
+}
+
+button{
+    background-color: rgb(202, 162, 122);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(14, 32, 67);
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    border-color: rgb(14, 32, 67);
+    margin: 10px;
+}
+
+.botoesBox{
+    position: relative;
+    width: 250px;
+    left: 34%;
+    margin-top: 10px;
+}

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); 
+
+body{
+
+background-color: #400101;
+
+}
+
+h1{
+
+color: #F2D338;
+font-family: 'Roboto', Arial, Helvetica, sans-serif;
+
+}
+
+.media-picture{
+
+    background-image: url("https://teamcomics.com.br/wp-content/uploads/2021/08/20210531-spider-man-way-home3.jpg");
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.review-score{
+
+color:white;
+background-color:#736332;
+padding: 12px;
+font-weight: bold;
+
+}
+
+h2{
+
+color:#D9CC8B;
+font-family: 'Roboto', Arial, Helvetica, sans-serif;
+font-style: italic;
+padding-top: 30px;
+
+}
+
+p{
+
+color: white;
+font-family: 'Roboto', Arial, Helvetica, sans-serif;
+text-align: justify;
+padding-left: 40px;
+padding-right: 40px;
+
+}
+
+a{
+
+color: #F2D338;
+font-size: 20px;
+
+}
+

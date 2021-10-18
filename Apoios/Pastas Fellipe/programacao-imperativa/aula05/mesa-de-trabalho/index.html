@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotador de Doláres - Aula 05</title>
+</head>
+<body>
+    
+    <script>
+        
+        /* Sala 05 
+        Luciano Silva
+        Karla Mazia
+        Paulo Souza
+        Felipe Bertevello
+        Diógenes Capela
+        Alan Menezes
+        */
+
+        //Chamar a identificação do usuário
+        var nomeDoUsuario = prompt("Olá, bem vindo ao Cotador CTD! Por favor, digite seu nome.");
+
+        //Coletar sua intenção de cotação
+        function coletarDados(quantidadeDolares){
+            
+            var quantidadeDolares = prompt ('Quantos dolares você gostaria de cotar hoje?');
+            var confirmarQuantidade = window.confirm ('Você gostaria de confirmar a cotação de US$' + quantidadeDolares + ' no dia de hoje? ');
+            if (confirmarQuantidade == true){ 
+                var cotacaoDolar = 5.3
+                var cotacaoFinal = alert('Olá ' + nomeDoUsuario + ', US$ ' + quantidadeDolares + ' valem R$ ' + quantidadeDolares * cotacaoDolar + ' hoje');
+            }
+            else{coletarDados()}
+
+        }
+        function redirecionar(){
+            alert("Agora que já sabe sua cotação, você será redirecionado para a página da Corretora de Câmbio Cotação.")
+            setTimeout(5000);
+            window.location.href="https://www.cotacao.com.br/"
+        }
+
+        coletarDados();
+        redirecionar();
+    </script> 
+</body>
+</html>

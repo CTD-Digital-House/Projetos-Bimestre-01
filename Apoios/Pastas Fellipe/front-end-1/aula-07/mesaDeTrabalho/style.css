@@ -1,0 +1,47 @@
+/* Adicionar cor de fundo do site */
+
+body{
+
+    background-color: rgb(47, 46, 46);
+    color: rgb(255, 251, 210);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1{
+
+    color: #c9a919;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+
+}
+
+h2{
+
+    font-size: 20px;
+
+}
+
+.job-title{
+
+    background-color: #eeedea;
+    color: #090946;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+
+}
+
+#high{
+
+    color: rgb(247, 226, 16);
+
+}
+
+ul{
+
+    background-color: #c8c7c2;
+    color: rgb(47, 46, 46);
+    padding: 10px;
+
+}

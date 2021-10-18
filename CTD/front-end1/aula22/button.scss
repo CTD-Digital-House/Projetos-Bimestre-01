@@ -1,0 +1,9 @@
+@mixin formatacaoButton {
+    font-size: 80px;
+    width: 100%;
+}
+
+.btn{
+    @include formatacaoButton;
+    background-color: green;
+}

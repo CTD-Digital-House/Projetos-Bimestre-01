@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 13 - Objetos literais, JSON</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        //Objeto literal
+        var professor = {
+            nome: 'João',
+            sobrenome: 'Bosco',
+            nomecompleto: function () {
+                return `${this.nome} ${this.sobrenome}`;
+            }
+        }
+
+        console.log(professor.nome);
+        console.log(professor.sobrenome);
+        console.log(professor.nomecompleto());
+
+
+        //JSON
+        var aluno = {
+            nome: "Luis",
+            sobrenome: "Antonio",
+            nomecompleto: function () {
+                return `${this.nome} ${this.sobrenome}`;
+            }
+        }
+
+        //Converti em JSON - Tipo string
+        var json = JSON.stringify(aluno);
+
+        //Não se consegue acessar a propriedade pois é um texto
+        console.log(json);
+        console.log(typeof (json));
+
+        /*
+            ( ) Converter JSON em Objeto Literal --> JSON.parse();
+        */
+
+        var objetoLiteral = JSON.parse(json);
+        console.log(objetoLiteral);
+        console.log(objetoLiteral.nome);
+        console.log(objetoLiteral.sobrenome)
+
+
+    </script>
+
+</body>
+
+</html>

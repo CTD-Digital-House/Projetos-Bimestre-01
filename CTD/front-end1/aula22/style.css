@@ -1,0 +1,17 @@
+.btn {
+  font-size: 80px;
+  width: 100%;
+  background-color: green;
+}
+
+h1 {
+  background-color: aqua;
+}
+h1 p {
+  background-color: black;
+  color: white;
+}
+h1 p:hover {
+  background-color: aqua;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

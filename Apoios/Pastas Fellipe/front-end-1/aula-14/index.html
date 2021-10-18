@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários Personalização - Aula 14 - Front End 1</title>
+
+</head>
+<body>
+
+    <form>
+
+        <img src="https://marketingdeconteudo.com/wp-content/uploads/2017/07/logotipos-famosos-playboy-249x300.png" alt="logotipo" height="150px" width="auto">
+
+        <h1>Formulário de Cadastro</h1>
+
+        <fieldset>
+
+            <legend>Dados Pessoais</legend>
+
+            <div>
+                <label for="nomeDoUsuario">Nome Completo</label>
+                <input type="text" name="nomeDoUsuario" id="nomeDoUsuario" placeholder="Insira o seu nome completo">
+            </div>
+
+            <div>
+                <label for="emailDoUsuario">E-mail</label>
+                <input type="email" name="emailDoUsuario" id="emailDoUsuario" placeholder="seuemail@gmail.com">
+            </div>
+
+            <div>
+                <label for="dataNascimento">Data de Nascimento</label>
+                <input type="date" name="dataNascimento" id="dataNascimento">
+            </div>
+
+            <div>
+                <label for="senhaDoUsuario">Senha</label>
+                <input type="password" name="senhaDoUsuario" id="senhaDoUsuario" placeholder="Digite sua senha de acesso">
+            </div>
+
+            <div>
+                <input type="checkbox" id="person">
+                <label for="person">Pessoa Jurídica</label>
+            </div>
+
+            <div>
+
+                <input type="radio" name="option" id="option1">
+                <label for="option1">Opção 1</label>
+                <input type="radio" name="option" id="option2">
+                <label for="option2">Opção 2</label>
+
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Localização</legend>
+
+            <div>
+            <label for="state">Estado</label>
+            <input type="search" list="states" name="state" id="state">
+            <datalist id="states">
+                <option value="São Paulo">
+                <option value="Rio de Janeiro">
+                <option value="Espírito Santo">
+                <option value="Minas Gerais">
+                <option value="Distrito Federal">
+                <option value="Goiás">
+                <option value="Mato Grosso">
+                <option value="Mato Grosso do Sul">
+            </datalist>
+            </div>
+
+
+            <label for="city">Cidade</label>
+            <select name="city" id="city">
+
+                <optgroup label="Sudeste">
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="es">Vitória</option>
+                    <option value="mg">Belo Horizonte</option>
+                </optgroup>
+                <optgroup label="Centro-Oeste">
+                    <option value="df">Brasília</option>
+                    <option value="go">Goiânia</option>
+                    <option value="mt">Cuiabá</option>
+                    <option value="ms">Campo Grande</option>
+                </optgroup>
+
+            </select>
+
+            <div>
+
+                <label for="coments">Observações e Comentários</label>
+                <textarea name="coments" id="coments" cols="30" rows="10" placeholder="Insira qualquer comentário que julgar pertinente"></textarea>
+
+
+            </div>
+
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar Formulário</button>
+
+    </form>
+
+</body>
+</html>

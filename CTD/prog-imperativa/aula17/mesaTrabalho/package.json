@@ -1,0 +1,16 @@
+{
+  "name": "index.js",
+  "version": "1.0.0",
+  "description": "Mesa Trabalho Aula 17",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+    
+  },
+  "author": "JoaoBosco",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

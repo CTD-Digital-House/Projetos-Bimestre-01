@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+p{
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color: #78bdbd;
+    /* background-image: url('https://img.freepik.com/fotos-gratis/3d-rendem-de-uma-mesa-de-madeira-com-uma-imagem-defocussed-de-um-barco-em-um-lago_1048-3432.jpg?size=626&ext=jpg'); */
+}
+
+h1{
+    color: #8256FD;
+    
+}
+.job-title{
+    background-color: #FB6255;
+    font-size: 30px;
+    color: #B34630;
+}
+   
+#high{
+    font-size: 30px;
+    color: #B34630;
+    font-style: italic;
+}
+
+h2{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul{
+    background-color: #afafaf;
+    font-size: medium;
+    color: #bd1f11;
+}
+
+.imagemfinal{
+    background-image: url('https://img.freepik.com/fotos-gratis/3d-rendem-de-uma-mesa-de-madeira-com-uma-imagem-defocussed-de-um-barco-em-um-lago_1048-3432.jpg?size=626&ext=jpg');
+}
