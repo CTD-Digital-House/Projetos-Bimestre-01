@@ -5,7 +5,7 @@ let result = 0
 for(let number of numbers){
 
 result = number + result
-console.log ('A soma é ' + result)
+console.log ('A soma do valor é ' + result)
 
 }
 
