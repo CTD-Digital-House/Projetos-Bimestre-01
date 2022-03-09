@@ -1,0 +1,5 @@
+1 - Primeiramente precisamos adicionar uma propriedade chamada type="module" na tag de script em nosso HTML, ela permite nós importarmos e exportarmos funções em nossos JS
+
+2 - Criar um arquivo somar.js e exportar uma função chamada somar dentro dele(é possível ver isso em ação no arquivo somar.js), reparem que eu utilizo o return dentro da função soma. Faço isso justamente para o valor da soma ser retornado para onde ela estiver sendo chamada, nesse caso, no console.log() do arquivo main.js
+
+3 - Em nosso main.js vamos importar a função soma e logo após isso dar um console.log() nela passando dois parametros
